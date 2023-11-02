@@ -1,0 +1,660 @@
+/* CSS */
+@charset "utf-8";
+/* 基本設定 */
+body {
+    background-color: gainsboro;
+}
+.container {
+    background-color: white;
+    position: relative;
+    width: auto;
+    height: auto; /* autoにすること */
+    margin-top: 10px;
+    border-top-left-radius: 15px;       /* 左上の角を丸くする */
+    border-top-right-radius: 15px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 15px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 15px;   /* 右下の角を丸くする */
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 8px; /* リンクの間隔を調整 */
+}
+a, table-text {
+    color: blue;
+}
+.table-text:hover {
+    color: black;
+}
+
+/* header設定 */
+#header {
+    background-color: white;
+    display: flex;
+}
+.header-title {
+    font-size: 25px;
+    font-style:oblique;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* header2設定 */
+.header-area {
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, #ff6b6b, #ffffff); /* 左から右へのグラデーション */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* テキストに影を追加 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    padding: 10px;
+    top: 20px;
+    align-items: center; /* 画像とテキストを垂直方向に中央揃え */
+    border-top-left-radius: 15px;       /* 左上の角を丸くする */
+    border-top-right-radius: 15px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 15px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 15px;   /* 右下の角を丸くする */
+}
+.header-img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 18px;       /* 左上の角を丸くする */
+    border-top-right-radius: 18px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 18px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 18px;   /* 右下の角を丸くする */
+}
+.header-name {
+    color: white;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* link section設定 */
+.link-area {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3px;
+    margin-bottom: 20px;
+}
+.link-1 {
+    color: black;
+    background-color: lightpink; /* マウスホバー時の背景色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    padding: 10px 3px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 3px;       /* 左上の角を丸くする */
+    border-top-right-radius: 3px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 3px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 3px;   /* 右下の角を丸くする */
+}
+.link-2 {
+    color: black;
+    background-color: lightskyblue; /* マウスホバー時の背景色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    padding: 10px 3px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 3px;       /* 左上の角を丸くする */
+    border-top-right-radius: 3px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 3px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 3px;   /* 右下の角を丸くする */
+}
+.link-3 {
+    color: black;
+    background-color:lightgoldenrodyellow; /* マウスホバー時の背景色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    padding: 10px 3px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 3px;       /* 左上の角を丸くする */
+    border-top-right-radius: 3px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 3px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 3px;   /* 右下の角を丸くする */
+}
+.link-4 {
+    color: black;
+    background-color: lightgreen; /* マウスホバー時の背景色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    padding: 10px 3px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 3px;       /* 左上の角を丸くする */
+    border-top-right-radius: 3px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 3px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 3px;   /* 右下の角を丸くする */
+}
+.link-1:hover {
+    color: black;
+}
+.link-2:hover {
+    color: black;
+}
+.link-3:hover {
+    color: black;
+}
+.link-4:hover {
+    color: black;
+}
+
+/* ~~~~~~~~ text section設定 ~~~~~~~~ */
+.summary-area {
+    color: black;
+    background-color: lightsteelblue;
+    font-size: 10px;
+    padding: 5px;
+    padding-top: 22px;
+    text-align: center;
+    border: 1px solid black;          /* 境界線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.summary-title {
+    text-align: center;
+}
+
+
+/* PCの設定 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1024px) {
+/* 基本設定 */
+a {
+    margin: 0 15px; /* リンクの間隔を調整 */
+}
+
+/* header設定 */
+.header-img {
+    width: 100px;
+    height: 100px;
+}
+.header-name {
+    font-size: 40px;
+}
+
+/* link section設定 */
+.link-area {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.link-1 {
+    background-color: white;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 10px 20px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-2 {
+    background-color: white;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 10px 20px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-3 {
+    background-color: white;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 10px 20px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-4 {
+    background-color: white;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 10px 20px; /* 上下左右の余白を調整 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかにするためのトランジション */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-1:hover {
+    background-color: lightpink; /* マウスホバー時の背景色 */
+    color: #000; /* マウスホバー時のテキスト色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-2:hover {
+    background-color: lightskyblue; /* マウスホバー時の背景色 */
+    color: #000; /* マウスホバー時のテキスト色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-3:hover {
+    background-color:lightgoldenrodyellow; /* マウスホバー時の背景色 */
+    color: #000; /* マウスホバー時のテキスト色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.link-4:hover {
+    background-color: lightgreen; /* マウスホバー時の背景色 */
+    color: #000; /* マウスホバー時のテキスト色 */
+    border: 1px solid #000; /* 外側の線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ~~~~~~~~ text section設定 ~~~~~~~~ */
+.summary-title, .article-title {
+    text-align: center;
+}
+.highlight-text-1 {
+    color: red; /* 赤色にハイライトする */
+}
+.highlight-text-2 {
+    color:black; /* 赤色にハイライトする */
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    border: 2px solid black; /* ボーダーラインアクセント */
+    border-top-left-radius: 5px;       /* 左上の角を丸くする */
+    border-top-right-radius: 5px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 5px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 5px;   /* 右下の角を丸くする */
+}
+
+/* summary area設定 */
+.summary-area {
+    color: black;
+    background-color:lightsteelblue;
+    font-size: 15px;
+    padding: 8px;
+    padding-top: 22px;
+    border: 1px solid black; /* 境界線を追加 */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.summary-content {
+    padding-top: 10px;
+}
+
+.text-1-2 {
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+}
+
+.text-1-3 {
+    color: black;
+    background-color:khaki;
+    border: 1px solid black; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    text-align: center;
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.img-1-1 {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-1-5 {
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+}
+
+.text-1-6 {
+    color: black;
+    background-color: khaki;
+    border: 1px solid black; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    text-align: center;
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.img-1-2 {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-1-8 {
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+}
+
+.text-1-9 {
+    color: black;
+    background-color: khaki;
+    border: 1px solid black; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    text-align: center;
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.img-1-3 {
+    width: 600px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.img-1-4 {
+    width: 600px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.img-1-5 {
+    width: 600px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* おすすめキャラクター５選（限定キャラクター） ----------------------------------------------------*/
+.text-1-13 {
+    color: black;
+    background-color: khaki;
+    border: 1px solid black; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    text-align: center;
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ヤクモ　 ---------------------------------------------------------------- */
+.line {
+    background-color:gainsboro;
+    border: 1px solid black; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.arrangement {
+    text-align: center; /* コンテナ内の内容を中央揃えにする */
+    margin-bottom: 20px;
+}
+.img-1-6, .img-1-7 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-1-14 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color:darkseagreen;
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ルシファー　 -------------------------------------------------------------- */
+.img-1-8, .img-1-9 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-1-15 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color: mediumpurple;
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ルナ　 -------------------------------------------------------------- */
+.img-1-10 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-1-16 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color: mediumpurple;
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* キリンジ　 ------------------------------------------------------------ */
+.img-1-11, .img-1-12 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-1-17 {
+    color: black;
+    text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white; /* 影を追加して外側の色をシミュレート */
+    background-color:rgb(240, 240, 116);
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ミカエル　 ------------------------------------------------------------ */
+.img-1-13, .img-1-14 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-1-18 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color:rgba(224, 11, 11, 0.876);
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* おすすめキャラクター５選（限定キャラクター） ----------------------------------------------------*/
+/* リムル ------------------------------------------------------------ */
+.img-2-1 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-2-1 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color:cornflowerblue;
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* 煉獄杏寿郎 ------------------------------------------------------------ */
+.img-2-2 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-2-2 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color: rgba(224, 11, 11, 0.876);
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* アムロ・レイ＆vガンダム ------------------------------------------------------------ */
+.img-2-3 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-2-3 {
+    color: black;
+    text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white; /* 影を追加して外側の色をシミュレート */
+    background-color: rgb(240, 240, 116);
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* 暁美ほむら ------------------------------------------------------------ */
+.img-2-4 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-2-4 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color: mediumpurple;
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+/* ミカサ・アッカーマン＆アルミン・アルレルト ------------------------------------------------------------ */
+.img-2-5 {
+    width: 300px;
+    height: 600px;
+    display: inline-block; /* 画像を横並びにする */
+    vertical-align: middle; /* 画像の垂直方向の中央揃え */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+.text-2-5 {
+    color: white;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black; /* 影を追加して外側の色をシミュレート */
+    background-color: rgba(224, 11, 11, 0.876);
+    border: 1px solid #7070708c; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔 */
+    display: inline-block; /* テキストの幅に合わせるためにインラインブロックとする */
+    border-top-left-radius: 10px;       /* 左上の角を丸くする */
+    border-top-right-radius: 10px;      /* 右上の角を丸くする */
+    border-bottom-left-radius: 10px;    /* 左下の角を丸くする */
+    border-bottom-right-radius: 10px;   /* 右下の角を丸くする */
+}
+
+
+
+
+}
